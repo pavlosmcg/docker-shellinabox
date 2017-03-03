@@ -15,7 +15,8 @@ ENV SIAB_VERSION=2.19 \
   SIAB_SSL=true \
   SIAB_SERVICE=/:LOGIN \
   SIAB_PKGS=none \
-  SIAB_SCRIPT=none
+  SIAB_SCRIPT=none \
+  SIAB_MESSAGES_ORIGIN=none
 
 RUN apt-get update && apt-get install -y openssl curl openssh-client sudo \
       shellinabox=${SIAB_VERSION} && \
