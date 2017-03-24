@@ -20,7 +20,7 @@ if [ "$SIAB_PKGS" != "none" ]; then
 fi
 
 if [ "$SIAB_MESSAGES_ORIGIN" != "none" ]; then
-	COMMAND+=" -m $SIAB_MESSAGES_ORIGIN"
+	COMMAND+=" -m '$SIAB_MESSAGES_ORIGIN'"
 fi
 
 if [ "$SIAB_SSL" != "true" ]; then
